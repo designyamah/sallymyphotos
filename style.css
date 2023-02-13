@@ -20,6 +20,8 @@ body {
 
 h1{
     text-align: center;
+    animation: fadein 1s 0.5s both;
+
 }
 
 h2{
@@ -85,6 +87,8 @@ form{
     left: 0;
     width: 100%;
     z-index: 999;
+    animation: fadein 1s 0.5s both;
+
 }
 
 input{
