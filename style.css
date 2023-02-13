@@ -165,5 +165,9 @@ body.dark-theme footer{
         font-size: 12px;
         padding: 10px;
     }
+
+    footer {
+        padding: 3px 10px;
+    }
     
 }
