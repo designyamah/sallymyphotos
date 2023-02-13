@@ -105,6 +105,7 @@ function createUIContent(d) {
 
 
 //toggle darkmode
-function toggleContrast() {
+function toggleContrast(e) {
+    e.preventDefault()
     document.body.classList.toggle("dark-theme");
   }
