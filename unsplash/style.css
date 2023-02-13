@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Figtree', sans-serif;
+	/* font-size: 16px; */
+	line-height: 1.5;
+	
+	background-color: #fff;
+	color: #333;
+    margin-top:92px;
+    transition: all 0.5s;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: 13px;
+
+    font-weight: 700;
+    border-bottom: 1px solid #c2beb5;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.iconsearch{
+    position: absolute;
+    font-size: 17px;
+    top: 50%;
+    left: 12px;
+    transform: translate(0px, -50%);
+}
+
+section.result{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap:32px;
+
+    font-size: 12px;
+    padding: 32px;
+}
+
+div.single-result div.image{
+    background-color: #eeeeee;
+    height: 400px;
+    width: auto;
+    margin-bottom: 16px;
+    padding: 32px;
+
+}
+
+div.single-result span.loading{
+    background-color: #eeeeee;
+    height: 12px;
+    width: 50%;
+    display: inline-block;
+
+}
+
+div.single-result p span.loading{
+    width: 30%;
+}
+
+
+img{
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    animation: fadein 1s 0.5s both;
+}
+
+form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+input{
+    width: 100%;
+    border: none;
+    background-color: #eeeeee;
+    padding: 20px 32px;
+    outline: none;
+    font-family: inherit;
+    transition: all 0.5s;
+
+}
+
+input:focus{
+    background-color:#d5d3d3 ;
+}
+
+ footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px 32px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+    transition: all 0.5s;
+    color: #333;
+    display: inline-block!important;
+  }
+  
+  a:hover {
+    color: #555;
+  }
+  
+
+body.dark-theme{
+    background-color: #333;
+    color: white;
+}
+  
+body.dark-theme a{
+    color: white;
+}
+  
+body.dark-theme a:hover {
+    color: #eee
+}
+
+
+body.dark-theme footer{
+    background-color: #333;
+}
+  
+
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media(max-width:480px){
+    section.result{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        gap: 10px;
+    
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+}
